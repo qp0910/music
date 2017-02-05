@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale==0,user-scalable=0">
+        <title></title>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/swiper.jquery.js"></script>
+        <script src="js/swiper.animate1.0.2.min.js"></script>
+        <link rel="stylesheet" href="css/swiper.min1.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/iconfont.css" />
+    </head>
+    <script>
+        function resize(originSize){
+            var widths=document.documentElement.clientWidth;
+            var heights=document.documentElement.clientHeight;
+            if(widths<heights){
+                var scale=widths/originSize*100;
+            }else if(widths>=heights){
+                var scale=heights/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+        }
+        $(function(){
+            resize(750);
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination : '.swiper-pagination'
+            })
+
+            $(".icon-mulu").click(function(){
+
+                $(".cehua").css("left","0");
+                $(".mask").css("display","block");
+                $("body").css("overflow","hidden")
+            })
+            $(".mask").click(function(){
+                $(".cehua").css("left","-6rem");
+                $(".mask").css("display","none");
+                $("body").css("overflow","visible")
+
+            })
+            $(".icon-11").click(function(){
+                $(".seach").css("display","block");
+                $("body").css("overflow","hidden")
+            })
+            $(".icon-fanhui").click(function(){
+                $(".seach").css("display","none");
+                $("body").css("overflow","visible");
+            })
+            var flag=true;
+            $(".cehua button").click(function(){
+                if(flag){
+                    $(".cehua button").html("登录/注册");
+                    $(".cehua .text").css("display","none");
+                    $(".cehua img").eq(0).css("display","none");
+                    $(".cehua img").eq(1).css("display","block");
+
+                    flag=false;
+                }else{
+                    location.href="login.html";
+                    setInterval(function(){
+                        $(".cehua button").html("退出登录");
+                        $(".cehua .text").css("display","block");
+                        $(".cehua img").eq(0).css("display","block");
+                        $(".cehua img").eq(1).css("display","none");
+                        flag=true;
+                    },1000)
+                }
+            })
+        })
+    </script>
+	<body>
+		<header class="head">
+            <div class="iconfont icon-mulu"></div>
+		 <nav class="nav">
+		 	 <a href="mine.html"><b class="iconfont icon-wode"></b>我的</a>
+			 <a href="index.html"><b class="iconfont icon-cd"></b>乐库</a>
+			 <a href="list.html"><b class="iconfont icon-fenlei"></b>分类</a>
+		 </nav>
+            <div class="iconfont icon-11"></div>
+        </header>
+        <div class="cehua">
+            <div class="top">
+                <img src="img/2016-12-13_143852.png" alt="">
+                <img src="img/1.png" alt="">
+                <div class="text">
+                    <h3>乖乖果效</h3>
+                    <p>Small apple,Small life.</p>
+                </div>
+            </div>
+            <div class="chb">
+                <ul>
+                    <li>
+                        <a href="close.html">
+                            <b class="iconfont icon-naozhong"></b>
+                            <span>定时关闭</span>
+                            <b class="iconfont icon-renturn"></b>
+                        </a>
+                    </li>
+                    <li>
+                        <b class="iconfont icon-huiyuanzhongxin"></b>
+                        <span>会员中心</span>
+                        <b class="iconfont icon-renturn"></b>
+                    </li>
+                    <li>
+                        <a href="delete.html">
+                            <b class="iconfont icon-shanchu"></b>
+                            <span>清除缓存</span>
+                            <b class="iconfont icon-renturn"></b>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <b class="iconfont icon-guanyuwomen"></b>
+                            <span>关于我们</span>
+                            <b class="iconfont icon-renturn"></b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fk.html">
+                            <b class="iconfont icon-fankui"></b>
+                            <span>反馈</span>
+                            <b class="iconfont icon-renturn"></b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button>退出登录</button>
+        </div>
+        <div class="mask"></div>
+        <div class="seach">
+            <div class="top">
+                <b class="iconfont icon-fanhui"></b>
+                <form action="">
+                    <input type="text " value="请输入音乐、歌手、歌词">
+                    <input value="搜索" type="button">
+                </form>
+                <p>取消</p>
+            </div>
+            <div class="hot">
+                <p>热门搜索</p>
+                <span>绿茶</span>
+                <span>听见下雨的声音</span>
+                <span>雨一直下</span>
+                <span>一次就好</span>
+                <span>海绵宝宝</span>
+                <span>演员</span>
+                <span>那就这样吧</span>
+                <span>不完美女孩</span>
+                <span>白日梦</span>
+                <span>异想记</span>
+                <div style="clear:both"></div>
+            </div>
+            <ul class="list">
+                <li class="iconfont icon-jinru">矜持</li>
+                <li class="iconfont icon-jinru">自由</li>
+                <li class="iconfont icon-jinru">思念是一种病</li>
+                <li class="iconfont icon-jinru">那些花儿</li>
+                <li class="iconfont icon-jinru">听妈妈的话</li>
+                <li class="iconfont icon-jinru">海绵宝宝</li>
+            </ul>
+            <div class="clear">清除搜索历史</div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hot hot1"></div>
+                    <div class="hotbot">
+                        <img src="img/2016-12-12_135752.png" alt="">
+                        <div class="txt">
+                            <h6>幸福下一站</h6>
+                            <p>幸福下一站地图没有号码</p>
+                            <p>只适合两个人前往</p>
+                        </div>
+                        <button>
+                            加入歌单
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hot hot2"></div>
+                    <div class="hotbot">
+                        <img src="img/33707f33b97c03ef-e989d519207501fc-417f0b65c0bd38f89fa860dc6e331204.jpg" alt="">
+                        <div class="txt">
+                            <h6>幸福下一站</h6>
+                            <p>幸福下一站地图没有号码</p>
+                            <p>只适合两个人前往</p>
+                        </div>
+                        <button>
+                            加入歌单
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                <div class="hot hot3"></div>
+                    <div class="hotbot">
+                        <img src="img/3a7cc9d08914ee1de4fdb668f233be52.jpg" alt="">
+                        <div class="txt">
+                            <h6>幸福下一站</h6>
+                            <p>幸福下一站地图没有号码</p>
+                            <p>只适合两个人前往</p>
+                        </div>
+                        <button>
+                            加入歌单
+                        </button>
+                    </div>
+            </div>
+                <div class="swiper-slide">
+                    <div class="hot hot4"></div>
+                    <div class="hotbot">
+                        <img src="img/09115512P-11.jpg" alt="">
+                        <div class="txt">
+                            <h6>幸福下一站</h6>
+                            <p>幸福下一站地图没有号码</p>
+                            <p>只适合两个人前往</p>
+                        </div>
+                        <button>
+                            加入歌单
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="list1">
+            <div class="top">
+                <div class="new">
+                    <span>new</span>
+                    <p>新歌推荐</p>
+                </div>
+                <a href="show.html" class="more">查看更多</a>
+            </div>
+            <div class="body">
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_093241.png" alt="">
+                    <h5>旅行的意义</h5>
+                    <p>你离开我，就是旅行的意义。</p>
+                    <div class="ping">
+                        <span><b class="iconfont icon-xihuan"></b>320</span>
+                        <span><b class="iconfont icon-buxihuan"></b>129</span>
+                    </div>
+                </a>
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_095917.png" alt="">
+                    <h5>我爱我的家</h5>
+                    <p>我爱我的家，儿子，女儿。</p>
+                    <div class="ping">
+                        <span><b class="iconfont icon-xihuan"></b>320</span>
+                        <span><b class="iconfont icon-buxihuan"></b>129</span>
+                    </div>
+                </a>
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_100336.png" alt="">
+                    <h5>妥协</h5>
+                    <p>爱到妥协，到头来只剩误解。</p>
+                    <div class="ping">
+                        <span><b class="iconfont icon-xihuan"></b>320</span>
+                        <span><b class="iconfont icon-buxihuan"></b>129</span>
+                    </div>
+                </a>
+                <div class="box">
+                    <img src="img/2016-12-13_100433.png" alt="">
+                    <h5>丑八怪</h5>
+                    <p>丑八怪，天黑别把灯打开。</p>
+                    <div class="ping">
+                        <span><b class="iconfont icon-xihuan"></b>320</span>
+                        <span><b class="iconfont icon-buxihuan"></b>129</span>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <div class="list2">
+            <div class="top">
+                <div class="new">
+                    <span>hot</span>
+                    <p>热门电台</p>
+                </div>
+                <a href="show.html" class="more">查看更多</a>
+            </div>
+            <div class="body">
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_101525.png" alt="">
+                    <div class="text">
+                        <h5>老婆</h5>
+                        <p>朋友啊，姐妹，都以不够来形容，我们的默契骄傲，扶持与包容。</p>
+                        <div class="ping">
+                            <span><b class="iconfont icon-xihuan"></b>320</span>
+                            <span><b class="iconfont icon-buxihuan"></b>129</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_103532.png" alt="">
+                    <div class="text">
+                        <h5>听海</h5>
+                        <p>灰色是不想说，蓝色是忧郁，而漂泊的你，流浪的心，又在哪里。</p>
+                        <div class="ping">
+                            <span><b class="iconfont icon-xihuan"></b>320</span>
+                            <span><b class="iconfont icon-buxihuan"></b>129</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_103659.png" alt="">
+                    <div class="text">
+                        <h5>我的未来不是梦</h5>
+                        <p>我从来不曾放弃过，对未来的追求，对梦的执着。</p>
+                        <div class="ping">
+                            <span><b class="iconfont icon-xihuan"></b>320</span>
+                            <span><b class="iconfont icon-buxihuan"></b>129</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="list3">
+            <div class="top">
+                <div class="new">
+                    <span>Esseace</span>
+                    <p>今日精华</p>
+                </div>
+                <a href="show.html" class="more">查看更多</a>
+            </div>
+            <div class="body">
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_104507.png" alt="">
+                    <div class="text">
+                        <h5>最新单曲</h5>
+                        <p>仅是听一句，便无法控制，慢慢循环。</p>
+                    </div>
+                    <button>了解更多</button>
+                </a>
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_110141.png" alt="">
+                    <div class="text">
+                        <h5>顶级夜店必备电音</h5>
+                        <p>用电音燃烧自己。</p>
+                    </div>
+                    <button>了解更多</button>
+                </a>
+                <a href="show.html" class="box">
+                    <img src="img/2016-12-13_111806.png" alt="">
+                    <div class="text">
+                        <h5>提神醒脑，一秒就好</h5>
+                        <p>无线耳机，立体声效。</p>
+                    </div>
+                    <button>了解更多</button>
+                </a>
+            </div>
+        </div>
+        <div style="width: 100%;height:1.2rem;"></div>
+        <a href="lyric.html" class="playbox">
+            <img src="img/2016-12-13_113239.png" alt="">
+            <div class="text">
+                <h5>矜持--电影《前任攻略》主题曲</h5>
+                <p>03：45</p>
+            </div>
+            <div class="progress">
+                <div class="cir"></div>
+            </div>
+            <div class="pla">
+                <b class="iconfont icon-ttpodicon"></b>
+                <b class="iconfont icon-shangyiqu"></b>
+                <b class="iconfont icon-bofang"></b>
+                <b class="iconfont icon-xiayiqu"></b>
+                <b class="iconfont icon-ttpodicon1"></b>
+            </div>
+        </a>
+	</body>
+</html>

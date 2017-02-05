@@ -1,0 +1,108 @@
+body,html{
+    padding:0;margin:0;
+    background: #ddd;
+    font-size: 0.22rem;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+*{
+    padding: 0;margin: 0;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height:0.9rem;
+    background: #111;
+    padding:0.1rem;
+    box-sizing: border-box;
+    color: #fff;
+    position:fixed;
+    top:0;
+    z-index: 10;
+}
+header .iconfont{
+    margin-top: 0.05rem;
+    float: left;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+header .txt{
+    width:6.2rem;
+    line-height:0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    float: left;
+}
+.body{
+    background: #fff;
+    text-align: center;
+    margin-top: 0.88rem;
+}
+.body img{
+    width: 2.5rem;
+    height:2.5rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+.sm{
+    margin-top: 0.2rem;
+    padding: 0 0.2rem;
+}
+.sm p:nth-child(1){
+    border-bottom: 0.01rem dashed #ccc;
+    padding-bottom: 0.2rem;
+}
+.sm p:nth-child(2){
+    margin-top: 0.2rem;
+    text-indent: 2em;
+    text-align: left;
+}
+.xz{
+    margin-top: 0.2rem;
+    padding: 0 0.2rem;
+}
+.xz p:nth-child(1){
+    border-bottom: 0.01rem dashed #ccc;
+    padding-bottom: 0.2rem;
+}
+.xz p:nth-child(2){
+    margin-top: 0.2rem;
+    text-indent: 2em;
+    text-align: left;
+    padding-bottom: 0.2rem;
+}
+.lx{
+    margin-top: 0.2rem;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0.2rem 0.2rem;
+}
+.lx span:nth-child(2n){
+    line-height: 0.8rem;
+    width: 4rem;
+    float: left;
+    border-bottom: 0.01rem dashed #ccc;
+}
+.lx span:nth-child(2n-1){
+    line-height: 0.8rem;
+    width: 3rem;
+    float: right;
+    text-align: right;
+    border-bottom: 0.01rem dashed #ccc;
+}
+.lx span:nth-child(6){
+    border-bottom:none;
+}
+.lx span:nth-child(7){
+    border-bottom:none;
+}
+.foot{
+    width: 100%;
+    position: fixed;
+    bottom: 0.2rem;
+    text-align: center;
+}

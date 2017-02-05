@@ -1,0 +1,241 @@
+body,html{
+    padding:0;margin:0;
+    background: #ddd;
+    font-size: 0.22rem;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+*{
+    padding: 0;margin: 0;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height:0.9rem;
+    background: #111;
+    padding:0.1rem;
+    box-sizing: border-box;
+    color: #fff;
+    position:fixed;
+    z-index: 10;
+}
+header .iconfont{
+    margin-top: 0.05rem;
+    float: left;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+header .txt{
+    width:6.2rem;
+    line-height:0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    float: left;
+}
+.head{
+    position: relative;
+    top:0.88rem;
+}
+.head img{
+    width: 100%;
+    height:4.5rem;
+}
+.head .txt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:1.3rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+.head .txt .left{
+    float: left;
+}
+.head .txt .left img{
+    float: left;
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+}
+.head .txt .left .name{
+    float: left;
+    width: 2rem;
+    color: #fff;
+    margin: 0.3rem;
+}
+.head .txt .right{
+    float: right;
+    color: #fff;
+    width: 0.5rem;
+    height:0.3rem;
+    margin: 0.4rem 0;
+    border: 0.01rem solid #fff;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+
+}
+.body{
+    margin-bottom: 0.88rem;
+}
+.body .xxk{
+    margin-top: 0.88rem;
+}
+.body .xxk li{
+    width: 50%;
+    height:0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    float: left;
+    border-bottom: 0.01rem solid #666;
+}
+.body .xxk li:nth-child(1){
+    color: #FDB814;
+    border-bottom: 0.05rem solid #FDB814;
+
+}
+.body .con{
+    padding: 0 0.5rem;
+}
+.body .con .list li{
+    padding: 0.3rem ;
+    border-bottom: 0.01rem solid #666;
+    position: relative;
+}
+.body .con .list li .icon-wusunyinzhi{
+    color: #FDB814;
+}
+.body .con .list li .icon-wodeqianbaoshouting{
+    position: absolute;
+    right: 0.5rem;
+    top:0.5rem;
+}
+.body .con .concon:nth-child(2){
+    display: none;
+}
+.body .con .sz{
+    float: left;
+    width: 100%;
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+}
+.body .con .sz .iconfont{
+    font-size: 0.2rem;
+}
+.body .con .sz span:nth-child(2){
+    margin-left: 3.7rem;
+}
+.body .con .photo{
+    width: 100%;
+    height:1.5rem;
+}
+.body .con .photo img{
+    width: 0.75rem;
+    height:0.75rem;
+    margin: 0.1rem;
+    border-radius: 50%;
+}
+.body .con .pl button{
+    display: block;
+    width: 2rem;
+    height:0.7rem;
+    background: #FDB814;
+    color: #fff;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+}
+.pltitle{
+    text-align: center;
+    padding: 0.1rem 0;
+    border-bottom: 0.01rem solid #333;
+}
+.plcon{
+    padding: 0.2rem;
+    border-bottom: 0.01rem solid #999;
+}
+.plcon img{
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    float: left;
+}
+.plcon .txt{
+    float: left;
+    width: 4.8rem;
+    margin-left: 0.2rem;
+}
+.plcon .txt .top {
+    position: relative;
+}
+.plcon .txt .top b{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.more{
+    text-align: center;
+    line-height: 0.5rem;
+ }
+.playbox{
+    width: 100%;
+    height:0.8rem;
+    background:#111;
+    margin-top: 0;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+.playbox img{
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    margin-top: -0.4rem;
+    margin-left: 0.4rem;
+    border: 0.04rem solid #FDB814;
+    float: left;
+}
+.playbox .text{
+    float: left;
+    margin-left: 0.2rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.playbox h5{
+    color: #fff;
+    width: 3.4rem;
+    overflow: hidden;
+    height: 0.3rem;
+}
+.pla{
+    float: right;
+    margin-right: 0.2rem;
+    margin-top:0.15rem;
+    text-decoration: none;
+}
+.pla b{
+    font-size: 0.22rem;
+}
+.pla .icon-bofang{
+    font-size: 0.44rem;
+}
+.progress{
+    width: 4rem;
+    height:0.1rem;
+    background: #FDB814;
+    position: absolute;
+    left:1.42rem;
+    top:-0.04rem;
+}
+.cir{
+    width: 0.2rem;
+    height:0.2rem;
+    background-color: #FDB814;
+    border-radius: 50%;
+    position: absolute;
+    right:0;top:-0.04rem;
+}

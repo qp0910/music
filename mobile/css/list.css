@@ -1,0 +1,329 @@
+body,html{
+    padding:0;margin:0;
+    background: #ddd;
+    font-size: 0.22rem;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+*{
+    padding: 0;margin: 0;
+    list-style: none;
+}
+.head{
+    padding:0.1rem;margin:0;
+    box-sizing: border-box;
+    width: 100%;
+    height:0.88rem;
+    background: #111;
+    border-top: 1px solid #111;
+    position: fixed;
+    top:0;left:0;
+    z-index: 5;
+}
+.head .iconfont{
+    line-height: 0.7rem;
+    font-size: 0.44rem;
+    color:#fff;
+}
+.icon-mulu{
+    float: left;
+}
+.icon-11{
+    float: right;
+}
+
+nav{
+    width: 5.6rem;
+    height:0.9rem;
+    box-sizing: border-box;
+    position: absolute;
+    left:0;right:0;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    z-index: 8;
+}
+nav .iconfont{
+    background:#FDB814;
+    border: 0.08rem solid #FDB814;
+    border-radius: 50%;
+    color:#fff ;
+    font-size: 0.16rem;
+}
+nav a{
+    padding: 0;margin: 0;
+    text-decoration: none;
+    padding-right:0.2rem;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 0.33rem;
+    width: 1.6rem;
+    height:0.9rem;
+    line-height: 0.9rem;
+    float: left;
+    color: #333;
+    text-align: right;
+}
+nav a:nth-child(1){
+    width: 2rem;
+    background: #fff;
+    border-radius: 0.9rem 0 0 0.9rem;
+}
+nav a:nth-child(2){
+    background: #fff;
+}
+nav a:nth-child(3){
+    width: 2rem;
+    background: #fff;
+    padding-right:0.46rem ;
+    box-sizing: border-box;
+    border-radius: 0 0.9rem 0.9rem 0;
+    margin-top:0.1rem;
+
+}
+.cehua{
+    width: 6rem;
+    height:100%;
+    background:  #ddd;
+    position: absolute;
+    left:-6rem;
+    top:0;
+    z-index: 30;
+}
+.top{
+    width: 100%;
+    height:5rem;
+    background: #222;
+}
+.top img{
+    width: 2rem;
+    height:2rem;
+    margin: 0.8rem;
+    margin-top: 1.6rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    float: left;
+}
+.top img:nth-child(2){
+    display: none;
+}
+.top .text{
+
+    float: left;
+    width: 2.4rem;
+    line-height: 0.5rem;
+    margin-top: 1.9rem;
+}
+.top h3{
+    color: #fff;
+}
+.chb{
+    width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.chb li{
+    line-height: 1rem;
+    border-bottom: 0.02rem solid #666;
+}
+.chb .iconfont{
+    color: #FDB814;
+}
+.chb .icon-renturn{
+    position: absolute;
+    right:0.8rem;
+    color: #999;
+}
+.cehua button{
+    display:block;
+    width: 2rem;
+    height:0.5rem;
+    background: #FDB814;
+    color:#fff;
+    margin: 1rem auto;
+}
+.mask{
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;left: 0;
+    z-index: 8;
+    display: none;
+}
+.seach{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    background: #222;
+    z-index: 6;
+    display:none;
+}
+.seach .top{
+    width:100%;
+    height:0.88rem;
+    background: #111;
+    padding:0.2rem;
+    box-sizing: border-box;
+}
+.seach .top input:nth-child(1){
+    width: 4.8rem;
+    margin-left:0.2rem;
+    background: #666;
+    color:#ccc;
+    font-size: 0.15rem;
+}
+.seach .top input:nth-child(2){
+    width: 0.8rem;
+    color: #fff;
+    background: #222;
+    margin-right: 0.2rem;
+}
+.seach .top b{
+    float: left;
+    color: #fff;
+    margin-top: 0.1rem;
+    font-size: 0.4rem;
+}
+.seach .top p{
+    float: left;
+    color: #fff;
+    margin-top: 0.1rem;
+    font-size: 0.25rem;
+}
+.seach .top input{
+    float: left;
+    height:0.5rem;
+    border: none;
+}
+.seach .hot{
+    padding: 0.2rem;
+}
+.secch .hot p{
+    display: block;
+    margin: 0.2rem 0;
+}
+.seach .hot span{
+    display: block;
+    float: left;
+    margin: 0.1rem 0.2rem;
+    border: 0.01rem solid #ccc;
+    padding: 0.1rem;
+    border-radius: 0.05rem;
+}
+.seach .list{
+    width: 100%;
+    padding: 0.5rem;
+}
+.seach .list li{
+    width: 80%;
+    padding: 0.2rem 0;
+    border-bottom: 0.01rem solid #ccc;
+}
+.clear{
+    color: #FDB814;
+    text-align: center;
+}
+.body{
+    margin-top: 0.88rem;
+}
+.box{
+    display: block;
+    width:100%;
+    height:3rem;
+    z-index: 2;
+    position: relative;
+}
+.box .text{
+    width: 1.6rem;
+    height:1.6rem;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    position: absolute;
+    top:0;bottom: 0;
+    left: 0;right:0;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6rem;
+    color: #fff;
+    font-size: 0.6rem;
+    animation: text 2s ease;
+}
+@keyframes text {
+    0%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+.box img{
+    width:100%;
+    height:100%;
+}
+
+.playbox{
+    width: 100%;
+    height:0.8rem;
+    background:#111;
+    margin-top: 0;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+.playbox img{
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    margin-top: -0.4rem;
+    margin-left: 0.4rem;
+    border: 0.04rem solid #FDB814;
+    float: left;
+}
+.playbox .text{
+    float: left;
+    margin-left: 0.2rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.playbox h5{
+    color: #fff;
+    width: 3.4rem;
+    overflow: hidden;
+    height: 0.3rem;
+}
+.pla{
+    float: right;
+    margin-right: 0.2rem;
+    margin-top:0.15rem;
+    text-decoration: none;
+}
+.pla b{
+    font-size: 0.22rem;
+}
+.pla .icon-bofang{
+    font-size: 0.44rem;
+}
+.progress{
+    width: 4rem;
+    height:0.1rem;
+    background: #FDB814;
+    position: absolute;
+    left:1.42rem;
+    top:-0.04rem;
+}
+.cir{
+    width: 0.2rem;
+    height:0.2rem;
+    background-color: #FDB814;
+    border-radius: 50%;
+    position: absolute;
+    right:0;top:-0.04rem;
+}

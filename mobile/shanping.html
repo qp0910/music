@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale==0,user-scalable=0">
+    <title></title>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+</head>
+<script>
+    window.onload=function(){
+        /*简单页面时动态改变尺寸，一般不用*/
+        var widths=document.documentElement.clientWidth;
+        var scale=widths/750;
+        var meta=document.querySelector("meta[name=viewport]");
+        meta.setAttribute("content","width==device-width,initial-scale="+scale+",maxinum-scale="+scale+",user-scalable=0")
+    }
+    function resize(originSize){
+        var widths=document.documentElement.clientWidth;
+        var heights=document.documentElement.clientHeight;
+        if(widths>heights){
+            var scale=widths/originSize*100;
+        }else if(widths<=heights){
+
+            var scale=heights/originSize*100;
+        }
+//        var type=type||"x";
+//        if(type=="x"){
+//            var widths=document.documentElement.clientWidth;
+//            var scale=widths/originSize*100;
+//        }else if(type=="y"){
+//            var heights=document.documentElement.clientHeight;
+//            var scale=heights/originSize*100;
+//        }
+
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+    }
+    $(function(){
+        resize(750);
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination',
+//pagination : '#swiper-pagination1',
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper); //隐藏动画元素
+                swiperAnimate(swiper); //初始化完成开始动画
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            }
+        })
+    })
+</script>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="bg1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <div class="txt ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.9s" swiper-animate-delay="0.5s">
+                <p>一起长大的约定</p>
+                <p>如此清晰</p>
+                <p>拉过勾的我相信</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="bg2 ani" swiper-animate-effect="pulse" swiper-animate-duration="0.9s" swiper-animate-delay="0.3s"></div>
+            <div class="txt ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.9s" swiper-animate-delay="0.5s">
+                <p>编号89757,</p>
+                <p>从这一刻起就是</p>
+                <p>你给我的名字</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="bg3 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <div class="txt ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                <p>乔布斯音乐节</p>
+                <p>欢迎您的加入</p>
+            </div>
+            <a href="index.html"><button class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">立即进入</button></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+</body>
+</html>

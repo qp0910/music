@@ -1,0 +1,241 @@
+body,html{
+    padding:0;margin:0;
+    background: #ddd;
+    font-size: 0.22rem;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+*{
+    padding: 0;margin: 0;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height:0.9rem;
+    background: #111;
+    padding:0.1rem;
+    box-sizing: border-box;
+    color: #fff;
+    position:fixed;
+    top:0;
+    z-index: 10;
+}
+header .iconfont{
+    margin-top: 0.05rem;
+    float: left;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+header .txt{
+    width:6.2rem;
+    line-height:0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    float: left;
+}
+.seach{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    background: #222;
+    z-index: 12;
+    display:none;
+}
+.seach .top{
+    width:100%;
+    height:0.88rem;
+    background: #111;
+    padding:0.2rem;
+    box-sizing: border-box;
+}
+.seach .top input:nth-child(1){
+    width: 4.8rem;
+    margin-left:0.2rem;
+    background: #666;
+    color:#ccc;
+    font-size: 0.15rem;
+}
+.seach .top input:nth-child(2){
+    width: 0.8rem;
+    color: #fff;
+    background: #222;
+    margin-right: 0.2rem;
+}
+.seach .top b{
+    float: left;
+    color: #fff;
+    margin-top: 0.1rem;
+    font-size: 0.4rem;
+}
+.seach .top p{
+    float: left;
+    color: #fff;
+    margin-top: 0.1rem;
+    font-size: 0.25rem;
+}
+.seach .top input{
+    float: left;
+    height:0.5rem;
+    border: none;
+}
+.seach .hot{
+    padding: 0.2rem;
+}
+.secch .hot p{
+    display: block;
+    margin: 0.2rem 0;
+}
+.seach .hot span{
+    display: block;
+    float: left;
+    margin: 0.1rem 0.2rem;
+    border: 0.01rem solid #ccc;
+    padding: 0.1rem;
+    border-radius: 0.05rem;
+}
+.seach .list{
+    width: 100%;
+    padding: 0.5rem;
+}
+.seach .list li{
+    width: 80%;
+    padding: 0.2rem 0;
+    border-bottom: 0.01rem solid #ccc;
+}
+.body{
+    margin-top: 1.08rem;
+    padding: 0 0.2rem;
+    background: #fff;
+}
+.body li{
+    position: relative;
+    line-height: 0.5rem;
+    padding: 0.2rem 0;
+    border-bottom: 0.01rem solid #999;
+}
+.body li:last-child{
+    border-bottom: none;
+}
+.body li .icon-yixuan{
+    color: #FDB814;
+}
+.body li .icon-zhankai{
+    position: absolute;
+    right:0;
+}
+.body li p{
+    color: #333;
+    font-size: 0.3rem;
+}
+.clear{
+    color: #FDB814;
+    text-align: center;
+}
+.playbox{
+    width: 100%;
+    height:0.8rem;
+    background:#111;
+    margin-top: 0.6rem;
+    color:#fff;
+    position: fixed;
+    z-index: 8;
+    bottom:0;
+}
+.playbox img{
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    margin-top: -0.4rem;
+    margin-left: 0.4rem;
+    border: 0.04rem solid #FDB814;
+    float: left;
+}
+.playbox .text{
+    float: left;
+    margin-left: 0.2rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.playbox h5{
+    color: #fff;
+    width: 3.4rem;
+    overflow: hidden;
+    height: 0.3rem;
+}
+.pla{
+    float: right;
+    margin-right: 0.2rem;
+    margin-top:0.15rem;
+    text-decoration: none;
+}
+.pla b{
+    font-size: 0.22rem;
+}
+.pla .icon-bofang{
+    font-size: 0.44rem;
+}
+.progress{
+    width: 4rem;
+    height:0.1rem;
+    background: #FDB814;
+    position: absolute;
+    left:1.42rem;
+    top:-0.04rem;
+}
+.cir{
+    width: 0.2rem;
+    height:0.2rem;
+    background-color: #FDB814;
+    border-radius: 50%;
+    position: absolute;
+    right:0;top:-0.04rem;
+}
+.bottom{
+    position: fixed;
+    bottom:-4.5rem;
+    width: 100%;
+    height:4.5rem;
+    background: #ddd;
+    z-index: 20;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+.bottom .tb{
+    width: 1.7rem;
+    height:1.7rem;
+    float: left;
+    text-align: center;
+}
+.bottom .tb .iconfont{
+    display: block;
+    width: 1rem;
+    height:1rem;
+    background: #fff;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+    border-radius: 0.05rem;
+}
+.bottom .cancel{
+    width: 100%;
+    height:0.8rem;
+    text-align: center;
+    float: left;
+    border-top: 0.01rem solid #999;
+    padding-top: 0.2rem;
+}
+.mask{
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;left: 0;
+    z-index: 8;
+    display: none;
+}

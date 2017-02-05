@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale==0,user-scalable=0">
+    <title></title>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min1.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/close.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+</head>
+<script>
+    function resize(originSize){
+        var widths=document.documentElement.clientWidth;
+        var heights=document.documentElement.clientHeight;
+        if(widths<heights){
+            var scale=widths/originSize*100;
+        }else if(widths>=heights){
+
+            var scale=heights/originSize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+    }
+    $(function(){
+        resize(750);
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination'
+        })
+        $(".btn button").click(function(){
+            alert("删除缓存成功")
+        })
+    })
+</script>
+<body>
+<header>
+    <a href="mine.html">
+        <b class="iconfont icon-fanhui"></b>
+    </a>
+    <div class="txt">
+        <h5>清除缓存</h5>
+    </div>
+</header>
+<form action="">
+    <ul class="body">
+        <li>
+            <span>缓存图片（2.41M）</span>
+            <input type="radio">
+        </li>
+        <li>
+            <span>缓存歌词（59.45k）</span>
+            <input type="radio">
+        </li>
+        <li>
+            <span>试听缓存（4.00k）</span>
+            <input type="radio">
+        </li>
+        <li>
+            <span>缓存MV（0.00B）</span>
+            <input type="radio">
+        </li>
+    </ul>
+    <div class="btn">
+        <button>确定</button>
+        <button>取消</button>
+    </div>
+
+</form>
+
+</body>
+</html>

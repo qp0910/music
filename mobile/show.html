@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale==0,user-scalable=0">
+    <title></title>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min1.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/show.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+</head>
+<script>
+    function resize(originSize){
+        var widths=document.documentElement.clientWidth;
+        var heights=document.documentElement.clientHeight;
+        if(widths<heights){
+            var scale=widths/originSize*100;
+        }else if(widths>=heights){
+
+            var scale=heights/originSize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+    }
+    $(function(){
+        resize(750);
+        $(".xxk li").click(function(){
+            var index=$(this).index();
+            $(".xxk li").css({
+                color: "#666",
+                borderBottom: "0.01rem solid #666"
+            }).eq(index).css({
+                color: "#FDB814",
+                borderBottom: "0.05rem solid #FDB814"
+            })
+            $(".con .concon").hide().eq(index).show();
+        })
+    })
+</script>
+<body>
+<header>
+    <a href="list2.html"><b class="iconfont icon-fanhui"></b></a>
+    <div class="txt">
+        <h5>每日最新单曲</h5>
+    </div>
+</header>
+<div class="head">
+    <img src="img/22.jpg" alt="">
+    <div class="txt">
+        <div class="left">
+            <img src="img/49.jpg" alt="">
+            <div class="name">
+                <h5>帅呆的小编</h5>
+                <p>3.2万听众</p>
+            </div>
+        </div>
+        <div class="right">收藏</div>
+    </div>
+</div>
+<div class="body">
+    <ul class="xxk">
+        <li>单曲382</li>
+        <li>评论1.1万</li>
+        <div style="clear:both"></div>
+    </ul>
+    <ul class="con">
+        <li class="concon">
+            <ul class="list">
+                <li>
+                    <h2>我要的不是再见</h2>
+                    <span>后弦-我要的不是再见</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>公子病</h2>
+                    <span>于湉-公子病</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>远方的远方还是远方</h2>
+                    <span>凤凰传奇-远方的远方还是远方</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wusunyinzhi"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>梦未完待续</h2>
+                    <span>于朦胧-梦未完待续</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>我要的不是再见</h2>
+                    <span>后弦-我要的不是再见</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>公子病</h2>
+                    <span>于湉-公子病</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>远方的远方还是远方</h2>
+                    <span>凤凰传奇-远方的远方还是远方</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wusunyinzhi"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+                <li>
+                    <h2>梦未完待续</h2>
+                    <span>于朦胧-梦未完待续</span>
+                    <b class="iconfont icon-ttpodicon2"></b>
+                    <b class="iconfont icon-wodeqianbaoshouting"></b>
+                </li>
+            </ul>
+        </li>
+        <li class="concon">
+            <div class="top">
+                <div class="sz">
+                    <span>收藏者</span>
+                    <span>223人收藏</span>
+                    <b class="iconfont icon-jinru1"></b>
+                </div>
+                <div class="photo">
+                    <img src="img/11.jpg" alt="">
+                    <img src="img/12.jpg" alt="">
+                    <img src="img/13.jpg" alt="">
+                    <img src="img/14.jpg" alt="">
+                    <img src="img/15.jpg" alt="">
+                    <img src="img/16.jpg" alt="">
+                </div>
+            </div>
+            <div class="pl">
+                <button>发表评论</button>
+                <p class="pltitle">1条评论</p>
+                <div class="plcon">
+                    <img src="img/19.jpg" alt="">
+                    <div class="txt">
+                        <div class="top">
+                            <p>蝶恋花</p>
+                            <p>29分钟前</p>
+                            <b class="iconfont icon-dianzan"></b>
+                        </div>
+                        <p>喜欢每天听一些新歌，总有一种不一样的新鲜感，光听名字就会觉得很有趣。</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="more">
+                    <span>查看更多评论</span>
+                    <b class="iconfont icon-jinru1"></b>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<a href="lyric.html" class="playbox">
+    <img src="img/2016-12-13_113239.png" alt="">
+    <div class="text">
+        <h5>矜持--电影《前任攻略》主题曲</h5>
+        <p>03：45</p>
+    </div>
+    <div class="progress">
+        <div class="cir"></div>
+    </div>
+    <div class="pla">
+        <b class="iconfont icon-ttpodicon"></b>
+        <b class="iconfont icon-shangyiqu"></b>
+        <b class="iconfont icon-bofang"></b>
+        <b class="iconfont icon-xiayiqu"></b>
+        <b class="iconfont icon-ttpodicon1"></b>
+    </div>
+
+</a>
+</body>
+</html>

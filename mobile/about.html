@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale==0,user-scalable=0">
+    <title></title>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min1.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+</head>
+<script>
+    function resize(originSize){
+        var widths=document.documentElement.clientWidth;
+        var heights=document.documentElement.clientHeight;
+        if(widths<heights){
+            var scale=widths/originSize*100;
+        }else if(widths>=heights){
+
+            var scale=heights/originSize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+    }
+    $(function(){
+        resize(750);
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination'
+        })
+    })
+</script>
+<body>
+<header>
+    <a href="mine.html">
+        <b class="iconfont icon-fanhui"></b>
+    </a>
+    <div class="txt">
+        <h5>关于乔布斯音乐</h5>
+    </div>
+</header>
+<div class="body">
+    <div class="top">
+        <img src="img/logo.png" alt="">
+        <p>版本号：2.4.3</p>
+        <p>（Android）</p>
+    </div>
+    <div class="sm">
+        <p>申明</p>
+        <p>此版本适用于Android系列设备，如在其他品牌或型号的设备上使用本软件，对于出现的任何问题，乔布斯公司不承担责任。本软件的下载、安装完全免费，使用过程中产生的数据流量费用，由运营商收取。</p>
+    </div>
+    <div class="xz">
+        <p>服务地区限制说明</p>
+        <p>非常抱歉，由于版权限制，当您在中国以外地区适用乔布斯音乐时，将无法使用在线音乐服务，乔布斯音乐仅提供本地播放和管理等离线音乐服务，非常感谢您的理解。</p>
+    </div>
+</div>
+<div class="lx">
+    <p>听音乐问题请联系</p>
+    <span>电话：</span>
+    <span>010-83829374</span>
+    <span>QQ：</span>
+    <span>839329747</span>
+    <span>QQ群</span>
+    <span>27346399</span>
+    <div style="clear: both"></div>
+</div>
+<div class="foot">
+    <p>山西乔布斯科技有限公司版权所有</p>
+    <p>Copyright@2012-2016QiaoBuSi All Right Reserved</p>
+</div>
+</body>
+</html>

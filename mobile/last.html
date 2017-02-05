@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale==0,user-scalable=0">
+    <title></title>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min1.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/last.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+</head>
+<script>
+    function resize(originSize){
+        var widths=document.documentElement.clientWidth;
+        var heights=document.documentElement.clientHeight;
+        if(widths<heights){
+            var scale=widths/originSize*100;
+        }else if(widths>=heights){
+
+            var scale=heights/originSize*100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+    }
+    $(function(){
+        resize(750);
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination'
+        })
+    })
+</script>
+<body>
+<header>
+    <a href="mine.html">
+        <b class="iconfont icon-fanhui"></b>
+    </a>
+    <div class="txt">
+        <h5>最近播放</h5>
+    </div>
+</header>
+<div class="body">
+    <div class="img">
+        <img src="img/33.jpg" alt="">
+        <b class="iconfont icon-play"></b>
+    </div>
+    <span class="mid">最近播放的歌曲</span>
+    <div class="right">
+        <span>6首</span>
+        <a href="local.html">
+            <b class="iconfont icon-jinru1"></b>
+        </a>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<a href="lyric.html" class="playbox">
+    <img src="img/2016-12-13_113239.png" alt="">
+    <div class="text">
+        <h5>矜持--电影《前任攻略》主题曲</h5>
+        <p>03：45</p>
+    </div>
+    <div class="progress">
+        <div class="cir"></div>
+    </div>
+    <div class="pla">
+        <b class="iconfont icon-ttpodicon"></b>
+        <b class="iconfont icon-shangyiqu"></b>
+        <b class="iconfont icon-bofang"></b>
+        <b class="iconfont icon-xiayiqu"></b>
+        <b class="iconfont icon-ttpodicon1"></b>
+    </div>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body,html{
+    padding:0;margin:0;
+    background: #ddd;
+    font-size: 0.22rem;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+*{
+    padding: 0;margin: 0;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height:0.9rem;
+    background: #111;
+    padding:0.1rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+header .iconfont{
+    margin-top: 0.05rem;
+    float: left;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+header .txt{
+    width:6.2rem;
+    line-height:0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    float: left;
+}
+.body{
+    width: 100%;
+    height:auto;
+    padding: 0.2rem;
+}
+.body li{
+    margin: 0.2rem 0;
+}
+.body a{
+    display: block;
+    color: #666;
+}
+.body img{
+    width: 1.5rem;
+    height:1.5rem;
+    float: left;
+}
+.body .txt{
+    width: 4rem;
+    height:1.5rem;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    float: left;
+    border-bottom: 0.01rem solid #bbb;
+}
+.body h5{
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+}
+.playbox{
+    width: 100%;
+    height:0.8rem;
+    background:#111;
+    margin-top: 0;
+    color:#fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+.playbox img{
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    margin-top: -0.4rem;
+    margin-left: 0.4rem;
+    border: 0.04rem solid #FDB814;
+    float: left;
+}
+.playbox .text{
+    float: left;
+    margin-left: 0.2rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.playbox h5{
+    color: #fff;
+    width: 3.4rem;
+    overflow: hidden;
+    height: 0.3rem;
+}
+.pla{
+    float: right;
+    margin-right: 0.2rem;
+    margin-top:0.15rem;
+    text-decoration: none;
+}
+.pla b{
+    font-size: 0.22rem;
+}
+.pla .icon-bofang{
+    font-size: 0.44rem;
+}
+.progress{
+    width: 4rem;
+    height:0.1rem;
+    background: #FDB814;
+    position: absolute;
+    left:1.42rem;
+    top:-0.04rem;
+}
+.cir{
+    width: 0.2rem;
+    height:0.2rem;
+    background-color: #FDB814;
+    border-radius: 50%;
+    position: absolute;
+    right:0;top:-0.04rem;
+}
